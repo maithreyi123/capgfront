@@ -1,0 +1,16 @@
+
+  <div class="card">
+    <div class="card-header">{{movieTitle}}</div>
+  </div>
+
+<div class="row">
+     <div *ngFor = "let data of movieLists" class="col-md-3" >
+       <h3>Title: {{data.movieTitle}}</h3>
+       <h3>ReleaseYear: {{data.movieYor}}</h3>
+       <img class="card-img-top img-fluid" src="{{data.moviePoster}}" alt="movie poster" width=80px height=50px>
+       
+     <a href="http://localhost:4200/wishlist">
+        <button (click) ="onWorking(data.movieId)">delete</button>
+     </a> 
+      </div>
+     </div>

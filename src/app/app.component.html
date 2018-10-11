@@ -1,0 +1,101 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+  </h1>
+</div>
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="includes/js/modernizr-2.6.2.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="keywords" contents="tech trends,technology,information,internet,computer,system,research,storage">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Information technology in India is an industry consisting of two major components: IT services and business process outsourcing (BPO).">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js">
+  <link href="https://fonts.googleapis.com/css?family=Ovo|Sigmar+One" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="fixed-top">
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <!--start of nav bar-->
+    <section class="container">
+      <a class="navbar-brand" href="#">
+        <img width="160" alt="movie app logo" src="/img/Wonder-Woman-Logo.jpg">
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <article class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav">
+          <li>
+            <a routerLink="/dashboard">Dashboard</a>
+          </li>
+          <!-- <li>
+              <a routerLink="/search">Search</a>
+            </li> -->
+          <li>
+            <a routerLink="/wishlist" >Wishlist</a>
+          </li>
+        </ul>
+       
+        
+      </article>
+    </section>
+  </nav>
+  </header>
+  <app-search></app-search>
+
+  <app-card [movieTitle]="movieNa"></app-card>
+  
+  
+<router-outlet></router-outlet>
+
+<footer class="bg-dark">
+  <section class="d-flex flex-sm-row flex-column row-h1">
+    <article class="p-4 item-h1">
+      <p class="text-white">@copyrights reserved</p>
+
+    </article>
+    <article class="p-4 item-h1">
+      <p class="text-white">Share on
+
+    <img src="img/fb.png" alt="facebooklogo" width=40px height=40px>
+    <img src="img/linkedin.png" alt="linkedinlogo" width=40px height=40px>
+     <img src="img/twitter.png" alt="twitterlogo" width=40px height=40px>
+    </p>
+   
+    </article>
+    <article class="p-4 item-h1">
+      <ul>
+        <li>
+          <a class=" text-white" href="*"> Help</a>
+        </li>
+        <li>
+          <a class=" text-white" href=""> Services</a>
+        </li>
+        <li>
+          <a class=" text-white" href="*"> Send feedback</a>
+        </li>
+      </ul>
+    </article>
+  </section>
+</footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+</html>
